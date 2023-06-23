@@ -1,0 +1,45 @@
+moz-any {
+    align-self :flex-end ;
+    margin-left: 900px;
+  }
+  
+  nav {
+      
+    Display:flex;
+    flex-direction: row;
+  }
+  
+  .roadimage{
+     margin: 10px 0 0 10px;
+     height: 200px;
+     width: 600px;
+  }
+  
+  /* size of the maps */
+  #map1, #map2, #map3, #map4, #map5{
+      height: 200px;
+      width: 200px;
+  }
+  
+  .card-header{
+    color:#dbdf00;
+  }
+  
+  .title{
+    color:#d4df00;
+  }
+  
+  .btn{
+    color:rgb(223, 219, 0); 
+    border:1px solid #e7e5ec; 
+  }
+  
+  .background-color{
+    background-color:rgb(171, 223, 0);
+  }
+  
+  .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(223, 115, 0);
+  }
+  
+  

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Find My Scenic Drive</title>
+  </head>
+
+  <body class="bg-dark">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <h1 class="navbar-brand fs-1 title" href="#">Find My University</h1>
+        <button class="navbar-toggler background-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>0
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="d-flex justify-content-center pr-5">
+            <ul class="navbar-nav" id="dropDown">
+              <li class="nav-item title">
+                <a class="nav-link active fs-3 title" aria-current="page" href="#" id="homeButton">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="input-group rounded container justify-content-center py-5">
+      <div class = "py-5">
+        <div class = "py-5">
+          <div class = "py-5">
+            <div class = "py-5">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-3"
+                  type="search"
+                  placeholder="Search State"
+                  aria-label="Search"
+                  id="theSearch"
+                />
+                <button class="btn btn-outline-primary" type="submit" id="searchActivate">
+                  Search
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container for the road cards -->
+    <div class="container justify-content-center align-items-center">
+      <!--Card for the keywest US-1  -->
+      <div class="card col-sm-12 p-2 bg-dark" id="fl">
+          <div class="card-header fs-3 bg-dark">
+              MIT -Massachussetts Institute of Technology
+          </div>
+          <div class = "row">
+            <div class="photo col">
+              <a href="https://fla-keys.com/the-highway-that-goes-to-sea/">
+              <img
+                class="img-fluid p-2"
+               src="./assets/images/mit.jpeg";
+                alt="Responsive image"
+              />
+              </a>  
+            </div>
+            <div class="desc p-2 col">
+              <p id="thisdesc" class="text-white fs-5">
+                History: MIT was founded in 1861 as a result of the increasing industrialization and technological advancements in the United States. 
+        Its original mission was to promote the practical application of science and engineering.
+
+       
+            </div>
+          </div>
+        
+            <div class="col row p-2">
+              <div class="col-md-6 container-fluid">
+                <div id="map1" class="col-12 col-md-12" style="height:100%; width:100%">
+                </div>
+              </div>
+              <div class="col-12 col-md-2">
+                <div class="card bg-dark text-white" id="wx-1a">
+                </div>
+              </div>
+              <div class="col-12 col-md-2">
+                <div class="card bg-dark text-white" id="wx-1b">
+                </div>
+              </div>
+              <div class="col-12 col-md-2">
+                <div class="card bg-dark text-white" id="wx-1c">
+                </div>
+              </div>
+            </div>
+      </div>
+      <p></p>
+      <!-- Card for the Lighthouse Trail  -->
+      <div class="card col-sm-12 p-2 bg-info bg-dark" id="tx">
+        <div class="card-header fs-3 bg-dark">
+          Stanford University
+        </div>
+        <div class = "row">
+          <div class="photo col">
+            <a href="https://tpwd.texas.gov/state-parks/palo-duro-canyon">
+            <img
+              class="img-fluid p-2"
+              src="./assets/images/Stanford.jpeg"
+              alt="Road"
+            />
+            </a>
+          </div>
+          <div class="desc p-2 col">
+            <p id="thisdesc" class="text-white fs-5">
+                Founded in 1885, Stanford is known for its academic excellence, cutting-edge research,
+                 and innovation in various fields. The university offers undergraduate and graduate programs across seven schools,
+                including humanities and sciences, engineering, business, law, medicine, education, and earth, energy, and environmental sciences.
+
+               
+                
+            </p>
+          </div>
+        </div>
+
+          <div class="row p-2">
+            <div class="col-md-6 container-fluid">
+              <div id="map2" class="col-xs-12" style="height:100%; width:100%">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-2a">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-2b">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-2c">
+              </div>
+            </div>
+          </div>
+    </div>
+    <p></p>
+      <!-- Harvard University  -->
+      <div class="card col-sm-12 p-2 bg-info bg-dark" id="ms">
+        <div class="card-header fs-3 bg-dark">
+          Harvard University
+        </div>
+        <div class = "row">
+          <div class="photo col">
+            <a href="https://www.gulfcoast.org/plan/itinerary-ideas/scenic-drives/">
+            <img
+            class="img-fluid p-2 col-12"
+            src="./assets/images/harvard.jpeg"
+            alt="Road"
+            />
+            </a>
+          </div>
+          <div class="desc p-2 col">
+            <p id="thisdesc" class="text-white fs-5">
+                Harvard University is a prestigious private Ivy League research university located in Cambridge, Massachusetts,
+                 USA. It is one of the oldest and most renowned universities in the United States.
+
+                Founded in 1636, Harvard has a rich history and is known for its academic excellence, 
+                influential faculty, and vibrant intellectual and cultural environment. lth, and more.
+            </p>
+          </div>
+        </div>
+
+          <div class="row p-2">
+            <div class="col-md-6 container-fluid">
+              <div id="map3" class="col-xs-12" style="height:100%; width:100%">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-3a">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-3b">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-3c">
+              </div>
+            </div>
+          </div>
+    </div>
+    <p></p>
+      <!-- California Institute of Technology-->
+      <div class="card col-sm-12 p-2 bg-dark" id="al">
+        <div class="card-header fs-3 bg-dark">
+          California Institute of Technology
+        </div>
+        <div class = "row">
+          <div class="photo col">
+            <a href="https://alabamabyways.com/2012/05/26/talladega-scenic-drive/">
+            <img
+            class="img-fluid p-2"
+            src="./assets/images/california.jpeg"
+            alt="Road"
+            />
+            </a>
+          </div>
+          <div class="desc p-2 col">
+            <p id="thisdesc" class="text-white fs-5">
+                The California Institute of Technology (Caltech) is a prestigious private research university located in Pasadena, California, USA. 
+                Founded in 1891, Caltech has established itself as one of the world's leading institutions for science and technology education and research.
+                Caltech is known for its rigorous academic programs and its focus on the fields of science, technology, engineering, and mathematics (STEM). 
+                
+            </p>
+          </div>
+        </div>
+
+          <div class="row p-2">
+            <div class="col-md-6 container-fluid">
+              <div id="map4" class="col-xs-12" style="height:100%; width:100%">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-4a">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-4b">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-4c">
+              </div>
+            </div>
+          </div>
+    </div>
+    <p></p>
+      <!-- Princeton University-->
+      <div class="card col-sm-12 p-2 bg-dark" id="la">
+        <div class="card-header fs-3 bg-dark">
+          Princeton University
+        </div>
+        <div class = "row">
+          <div class="photo col">
+            <a href="https://experiencemississippiriver.com/">
+            <img
+            class="img-fluid p-2"
+            src="./assets/images/princeton.jpeg"
+            alt="Road"
+            />
+            </a>
+          </div>
+          <div class="desc p-2 col">
+            <p id="thisdesc" class="text-white fs-5">
+                Princeton University is a prestigious private research university located in Princeton, New Jersey, USA. Established in 1746,
+                it is one of the oldest and most respected universities in the United States.
+                Princeton University offers undergraduate and graduate programs in various disciplines, including the humanities, 
+                
+            </p>
+          </div>
+        </div>
+
+          <div class="row p-2">
+            <div class="col-md-6 container-fluid">
+              <div id="map5" class="col-xs-12" style="height:100%; width:100%">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-5a">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-5b">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="card bg-dark text-white" id="wx-5c">
+              </div>
+            </div>
+          </div>
+    </div>
+  <p></p>
+  <!-- University of Chicago-->
+<div class="card col-sm-12 p-2 bg-dark" id="ga">
+        <div class="card-header fs-3 bg-dark">
+          University of Chicago
+        </div>
+        <div class = "row">
+          <div class="photo col">
+            <img
+            class="roadimage"
+            src="./assets/images/chicago.jpeg"
+            alt="Road"
+            />
+          </div>
+          <div class="desc p-2 col">
+            <p id="thisdesc" class="text-white fs-5">
+                The University of Chicago, often referred to as UChicago, is a renowned private research university located in Chicago, Illinois, USA. Established in 1890, the university has a 
+                rich history and is known for its commitment to rigorous academic inquiry and intellectual exploration.
+
+
+
+                </p>>
+              
+          </div>
+        </div>
+
+        <div class="row p-2">
+          <div class="col-md-6 container-fluid">
+            <div id="map6" class="col-12 col-md-12" style="height:100%; width:100%">
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="card bg-dark text-white" id="wx-6a">
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="card bg-dark text-white" id="wx-6b">
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="card bg-dark text-white" id="wx-6c">
+            </div>
+          </div>
+        </div>
+    </div>
+    <p></p>
+    <!-- Columbia University-->
+    <div class="card col-sm-12 p-2 bg-dark" id="az">
+      <div class="card-header fs-3 bg-dark">
+        Columbia University
+      </div>
+      <div class = "row">
+        <div class="photo col">
+          <img
+          class="roadimage"
+          src="assets/images/columbia.jpeg"
+          alt="Road"
+          />
+        </div>
+        <div class="desc p-2 col">
+          <p id="thisdesc" class="text-white fs-5">
+            Founded in 1754, Columbia University has a rich history and is known for its academic excellence, 
+            influential faculty, and vibrant intellectual and cultural environment. 
+        </div>
+      </div>
+        <div class="row p-2">
+          <div class="col-md-6 container-fluid">
+            <div id="map7" class="col-xs-12" style="height:100%; width:100%">
+            </div>
+          </div>
+          <div class="col-2 col-md-2">
+            <div class="card bg-dark text-white" id="wx-7a">
+            </div>
+          </div>
+          <div class="col-2 col-md-2">
+            <div class="card bg-dark text-white" id="wx-7b">
+            </div>
+          </div>
+          <div class="col-2 col-md-2">
+            <div class="card bg-dark text-white" id="wx-7c">
+            </div>
+          </div>
+        </div>
+  </div>
+  <p></p>
+  <!-- Yale University -->
+  <div class="card col-sm-12 p-2 bg-dark" id="nv">
+    <div class="card-header fs-3 bg-dark">
+      Yale University
+    </div>
+    <div class = "row">
+      <div class="photo col">
+        <img
+        class="roadimage"
+        src="assets/images/yale.webp"
+        alt="Road"
+        />
+      </div>
+      <div class="desc p-2 col">
+        <p id="thisdesc" class="text-white fs-5">
+            Yale University is a prestigious private research university located in New Haven, Connecticut, USA.
+             It is one of the oldest universities in the United States, founded in 1701.
+
+            
+        </p>
+      </div>
+    </div>
+      <div class="row p-2">
+        <div class="col-md-6 container-fluid">
+          <div id="map8" class="col-xs-12" style="height:100%; width:100%">
+          </div>
+        </div>
+        <div class="col-2 col-md-2">
+          <div class="card bg-dark text-white" id="wx-8a">
+          </div>
+        </div>
+        <div class="col-2 col-md-2">
+          <div class="card bg-dark text-white" id="wx-8b">
+          </div>
+        </div>
+        <div class="col-2 col-md-2">
+          <div class="card bg-dark text-white" id="wx-8c">
+          </div>
+        </div>
+      </div>
+</div>
+<p></p>
+<!-- University of Pennsylvania -->
+<div class="card col-sm-12 p-2 bg-dark" id="az2">
+  <div class="card-header fs-3 bg-dark">
+    University of Pennsylvania
+  </div>
+  <div class = "row">
+    <div class="photo col">
+      <img
+      class="roadimage"
+      src="assets/images/Pennsylvania.jpeg"
+      alt="Road"
+      />
+    </div>
+    <div class="desc p-2 col">
+      <p id="thisdesc" class="text-white fs-5">
+        The University of Pennsylvania (UPenn) is a prestigious private Ivy League research university located in Philadelphia, 
+        Pennsylvania, USA. It is one of the oldest universities in the United States and is renowned for its academic excellence and diverse programs.
+
+
+      </p>
+    </div>
+  </div>
+    <div class="row p-2">
+      <div class="col-md-6 container-fluid">
+        <div id="map9" class="col-xs-12" style="height:100%; width:100%">
+        </div>
+      </div>
+      <div class="col-2 col-md-2">
+        <div class="card bg-dark text-white" id="wx-9a">
+        </div>
+      </div>
+      <div class="col-2 col-md-2">
+        <div class="card bg-dark text-white" id="wx-9b">
+        </div>
+      </div>
+      <div class="col-2 col-md-2">
+        <div class="card bg-dark text-white" id="wx-9c">
+        </div>
+      </div>
+    </div>
+</div>
+<p></p>
+<!-- Johns Hopkins University -->
+<div class="card col-sm-12 p-2 bg-dark" id="ut">
+  <div class="card-header fs-3 bg-dark">
+    Johns Hopkins University
+  </div>
+  <div class = "row">
+    <div class="photo col">
+      <img
+      class="roadimage"
+      src="assets/images/johns.jpeg"
+      alt="Road"
+      />
+    </div>
+    <div class="desc p-2 col">
+      <p id="thisdesc" class="text-white fs-5">
+        Johns Hopkins University is a prestigious private research university located in Baltimore,
+         Maryland, USA. It is known for its academic excellence, research contributions, and world-renowned medical programs.
+      </p>
+    </div>
+  </div>
+
+    <div class="row p-2">
+      <div class="col-md-6 container-fluid">
+        <div id="map10" class="col-xs-12" style="height:100%; width:100%">
+        </div>
+      </div>
+      <div class="col-2 col-md-2">
+        <div class="card bg-dark text-white" id="wx-10a">
+        </div>
+      </div>
+      <div class="col-2 col-md-2">
+        <div class="card bg-dark text-white" id="wx-10b">
+        </div>
+      </div>
+      <div class="col-2 col-md-2">
+        <div class="card bg-dark text-white" id="wx-10c">
+        </div>
+      </div>
+    </div>
+</div>
+<!--  Drive Through Mojave-->
+
+    <!-- script that links the file and the google maps api. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz3m9bjLExihJkDmHC_2fPkhBJf-6xupc&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
